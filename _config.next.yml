@@ -172,7 +172,7 @@ social_icons:
 
 # Blog rolls
 links_settings:
-  icon: fa fa-globe
+  icon: fa-solid fa-paw
   title: Links
   # Available values: block | inline
   layout: block
@@ -188,7 +188,7 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
@@ -205,19 +205,19 @@ language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
+  since: 2022
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    name: fa-solid fa-paper-plane
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#6e7171"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: 小文同学~
 
   # Powered by Hexo & NexT
   powered: true
