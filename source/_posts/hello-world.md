@@ -5,4 +5,4 @@ tags:
 ---
 这是我的博客，欢迎大家访问~
 
-![haha](hh.jpg)
+![haha](/source/images/hh.jpg)
