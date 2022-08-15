@@ -177,8 +177,9 @@ links_settings:
   # Available values: block | inline
   layout: block
 
+
 links:
-  #Title: https://example.com
+  小葛同学的博客: https://getaoning.com/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
