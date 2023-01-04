@@ -20,31 +20,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"wenyiming.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="本篇博客仅仅提供下列内容：  注释 标识符和关键字 数据类型 数据类型拓展 类型转换 变量、常量、作用域">
+    <meta name="description" content="本篇博客参考资料：《路由交换技术详解与实践》&#x2F;新华三大学编著.——北京：清华大学出版社《HCIA-Datacom网络技术学习指南》&#x2F;华为技术有限公司主编.——北京：人民邮电出版社">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java基础（1）">
-<meta property="og:url" content="https://wenyiming.cn/2022/08/16/first-post/index.html">
+<meta property="og:title" content="H3CNE学习之“数据通信与计算机网络基础”">
+<meta property="og:url" content="https://wenyiming.cn/2023/01/04/H3C-Basics-of-Computer-Networks/index.html">
 <meta property="og:site_name" content="小文同学的个人博客">
-<meta property="og:description" content="本篇博客仅仅提供下列内容：  注释 标识符和关键字 数据类型 数据类型拓展 类型转换 变量、常量、作用域">
+<meta property="og:description" content="本篇博客参考资料：《路由交换技术详解与实践》&#x2F;新华三大学编著.——北京：清华大学出版社《HCIA-Datacom网络技术学习指南》&#x2F;华为技术有限公司主编.——北京：人民邮电出版社">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://wenyiming.cn/2022/08/16/first-post/RC.png">
-<meta property="og:image" content="https://wenyiming.cn/2022/08/16/first-post/c.jpg">
-<meta property="article:published_time" content="2022-08-16T04:23:14.000Z">
+<meta property="og:image" content="https://wenyiming.cn/2023/01/04/H3C-Basics-of-Computer-Networks/%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2.png">
+<meta property="article:published_time" content="2023-01-04T08:22:45.000Z">
 <meta property="article:modified_time" content="2023-01-04T11:36:16.266Z">
 <meta property="article:author" content="小文同学">
-<meta property="article:tag" content="java基础">
+<meta property="article:tag" content="H3CNE学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://wenyiming.cn/2022/08/16/first-post/RC.png">
+<meta name="twitter:image" content="https://wenyiming.cn/2023/01/04/H3C-Basics-of-Computer-Networks/%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2.png">
 
 
-<link rel="canonical" href="https://wenyiming.cn/2022/08/16/first-post/">
+<link rel="canonical" href="https://wenyiming.cn/2023/01/04/H3C-Basics-of-Computer-Networks/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wenyiming.cn/2022/08/16/first-post/","path":"2022/08/16/first-post/","title":"java基础（1）"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wenyiming.cn/2023/01/04/H3C-Basics-of-Computer-Networks/","path":"2023/01/04/H3C-Basics-of-Computer-Networks/","title":"H3CNE学习之“数据通信与计算机网络基础”"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>java基础（1） | 小文同学的个人博客</title>
+<title>H3CNE学习之“数据通信与计算机网络基础” | 小文同学的个人博客</title>
   
 
 
@@ -113,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B3%A8%E9%87%8A"><span class="nav-number">1.</span> <span class="nav-text">1.注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%A0%87%E8%AF%86%E7%AC%A6%E5%92%8C%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">2.</span> <span class="nav-text">2.标识符和关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.</span> <span class="nav-text">3. 数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">4.</span> <span class="nav-text">4. 类型转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%8F%98%E9%87%8F%E3%80%81%E5%B8%B8%E9%87%8F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">5.</span> <span class="nav-text">5. 变量、常量、作用域</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">数据通信基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E4%BF%A1%E7%AE%80%E5%8F%B2"><span class="nav-number">1.1.</span> <span class="nav-text">电信简史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2%E7%BD%91%E7%BB%9C"><span class="nav-number">1.2.</span> <span class="nav-text">电路交换网络</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -194,7 +193,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wenyiming.cn/2022/08/16/first-post/">
+    <link itemprop="mainEntityOfPage" href="https://wenyiming.cn/2023/01/04/H3C-Basics-of-Computer-Networks/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaowen.jpg">
@@ -207,12 +206,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="java基础（1） | 小文同学的个人博客">
+      <meta itemprop="name" content="H3CNE学习之“数据通信与计算机网络基础” | 小文同学的个人博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          java基础（1）
+          H3CNE学习之“数据通信与计算机网络基础”
         </h1>
 
         <div class="post-meta-container">
@@ -222,15 +221,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2022-08-16 12:23:14" itemprop="dateCreated datePublished" datetime="2022-08-16T12:23:14+08:00">2022-08-16</time>
+      <time title="创建时间：2023-01-04 16:22:45 / 修改时间：19:36:16" itemprop="dateCreated datePublished" datetime="2023-01-04T16:22:45+08:00">2023-01-04</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+        <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-01-04 19:36:16" itemprop="dateModified" datetime="2023-01-04T19:36:16+08:00">2023-01-04</time>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/H3CNE%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">H3CNE学习</span></a>
+        </span>
     </span>
 
   
@@ -243,116 +245,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>本篇博客仅仅提供下列内容：</p>
-<ol>
-<li>注释</li>
-<li>标识符和关键字</li>
-<li>数据类型</li>
-<li>数据类型拓展</li>
-<li>类型转换</li>
-<li>变量、常量、作用域<span id="more"></span></li>
-</ol>
-<h2 id="1-注释"><a href="#1-注释" class="headerlink" title="1.注释"></a>1.<strong>注释</strong></h2><ul>
-<li>单行注释<br>   <em>使用“&#x2F;&#x2F;”表示。</em></li>
-<li>多行注释<br>   <em>使用“&#x2F;”和“*”表示。</em></li>
-<li>文档注释<br>   <em>使用“&#x2F;”和“**”表示。</em></li>
-</ul>
-<h2 id="2-标识符和关键字"><a href="#2-标识符和关键字" class="headerlink" title="2.标识符和关键字"></a>2.<strong>标识符和关键字</strong></h2><p><strong>标识符：</strong></p>
-<ul>
-<li>由字母、数字、下划线“_”、美元符号“$”组成，不能含有其他符号，并且首字符不能是数字。</li>
-<li>不能把java关键字和保留字作为标识符。</li>
-<li>标识符严格区分大小写。</li>
-<li>标识符理论上没有长度限制。</li>
-</ul>
-<p> <strong>关键字：</strong><br> <img src="/2022/08/16/first-post/RC.png" class="" title="关键字"></p>
-<p> 其中：</p>
-<table>
-<thead>
-<tr>
-<th align="center">类别</th>
-<th align="center">关键字</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">控制类型</td>
-<td align="center">private protected public default</td>
-</tr>
-<tr>
-<td align="center">类、方法和变量修饰符</td>
-<td align="center">abstract class extends final implements interface native new static strictfp synchronized transient volatile</td>
-</tr>
-<tr>
-<td align="center">程序控制</td>
-<td align="center">break case	continue default do else for if instanceof return switch while</td>
-</tr>
-<tr>
-<td align="center">错误处理</td>
-<td align="center">assert catch finally throw throws try</td>
-</tr>
-<tr>
-<td align="center">包相关</td>
-<td align="center">import	package</td>
-</tr>
-<tr>
-<td align="center">基本类型</td>
-<td align="center">boolean byte char double float int long short</td>
-</tr>
-<tr>
-<td align="center">变量引用</td>
-<td align="center">super this void</td>
-</tr>
-<tr>
-<td align="center">保留关键字</td>
-<td align="center">goto const null</td>
-</tr>
-</tbody></table>
-<h2 id="3-数据类型"><a href="#3-数据类型" class="headerlink" title="3. 数据类型"></a>3. <strong>数据类型</strong></h2><p> <strong>八种基本类型：</strong></p>
- <img src="/2022/08/16/first-post/c.jpg" class="" title="八种基本数据类型">
-
-<blockquote>
-<p>除此之外还有引用类型：数组；类（String字符串）；接口</p>
-</blockquote>
-<h2 id="4-类型转换"><a href="#4-类型转换" class="headerlink" title="4. 类型转换"></a>4. <strong>类型转换</strong></h2><ul>
-<li>因为Java是强类型语言，在进行某些运算的时候，需要使用到类型转换。</li>
-<li>类型由低到高为：byte–&gt;short–&gt;char–&gt;int–&gt;long–&gt;float–&gt;double</li>
-<li>类型转换有两种：<br>1）自动类型转换，也叫做隐式转换<br>数据类型由低到高时使用<br>2）强制类型转换，也叫做显式转换<br>数据类型由高到低时使用</li>
-<li>注意：<br>   1. 不能对布尔值进行转换<br>   2. 不能把对象类型转换为不相干的类型<br>   3. 在把高容量转换到低容量的时候，强制转换<br>   4. 转换的时候可能存在内存溢出，或者精度问题！</li>
-</ul>
-<h2 id="5-变量、常量、作用域"><a href="#5-变量、常量、作用域" class="headerlink" title="5. 变量、常量、作用域"></a>5. <strong>变量、常量、作用域</strong></h2><ul>
-<li><strong>变量：</strong></li>
-</ul>
-<ol>
-<li><p>Java是一种强类型语言，每个变量都必须声明其类型。</p>
-</li>
-<li><p>变量是程序中最基本的存储单元，但起要素包括变量名、变量类型和作用域。</p>
-</li>
-<li><p>语法：数据类型  变量名 &#x3D; 值;  可以使用逗号隔开来声明多个同类型变量。</p>
-<ul>
-<li>注意:</li>
-</ul>
-<ol>
-<li>每个变量都必须有类型，类型可以是基本类型，也可以是引用类型。</li>
-<li>变量名必须是合法的标识符。</li>
-<li>变量声明是一条完整的语句，因此每个声明是都必须以分号结束。</li>
-</ol>
-</li>
-</ol>
-<ul>
-<li><strong>变量作用域：</strong></li>
-</ul>
-<ol>
-<li>类变量</li>
-<li>实例变量</li>
-<li>局部变量</li>
-</ol>
-<ul>
-<li><strong>常量</strong></li>
-</ul>
-<ol>
-<li>常量可以理解为一种特殊的变量，它的值被设定之后，在程序运行过程中不允许被改变。</li>
-<li>语法： final 常量名&#x3D;值；</li>
-</ol>
-
+        <p>本篇博客参考资料：<br>《路由交换技术详解与实践》&#x2F;新华三大学编著.——北京：清华大学出版社<br>《HCIA-Datacom网络技术学习指南》&#x2F;华为技术有限公司主编.——北京：人民邮电出版社</p>
+<span id="more"></span>
+<h1 id="数据通信基础知识"><a href="#数据通信基础知识" class="headerlink" title="数据通信基础知识"></a>数据通信基础知识</h1><p>作为人类的一种沟通方式，通信有着悠久的历史。从广义上来说，所谓通信是指把信息通过某种方式，从发送方经过一段距离传递给接收方的行为。由此看来，凡是通信，至少会涉及信息在媒介中的传递过程，以及通信的参与者————信息的发送方和接收方。</p>
+<h2 id="电信简史"><a href="#电信简史" class="headerlink" title="电信简史"></a>电信简史</h2><p>s<br>如果要在媒介中传递信息，那么可能需要改变信息的存在方式。既然涉及发送方和接收方，那么双方在通信行为发生之前就要约定信息的表示方式，以便让信息在媒介中传输，这是因为只有事先进行约定，接收方才能还原被改变的信息。</p>
+<p>当然，信息表示方式只有在约定的通信情景下才能生效。如果通信情景发生了变化，那么相同的信息表示方式所表达的含义也会产生变化。</p>
+<p>例如，同样是烽火浓烟，在古代的人们看见之后会认为是有“敌军来犯”，而在今天的人们看见之后或许是拨打火警电话，而不是通知国防部部署防御力量。</p>
+<p>在港口诞生之后，和烽火传信的逻辑类似，人们发明了灯塔。十几个世纪之后，人们逐渐定义了灯号和旗语。通信双方不进行接触的远程通信在内容和形式上慢慢变得丰富起来。直到人们发现电的特性之后，通信的发展才开始呈现出爆炸式的发展。</p>
+<p>1937年，用电描述信息的电报在大西洋两岸的英国和美国几乎同时获得了专利。获得英国专利的是<em>查尔斯·惠斯通和威廉·库克</em>，获得美国专利的是<em>萨缪尔·摩尔斯</em>，后者因为定义了拉丁字母和数字编码的电信号排列方式儿名满天下，这种排列方式被称为摩尔斯电码。</p>
+<p>电报的的诞生为使用电信号实现远程通信打开了大门。1858年，第一条跨越大西洋的海底电缆成功铺设。1865年，为了对电报通信实行规范和管理，人们在法国巴黎成立了国际电报联盟。1934年，为了把之后产生的电话&#x2F;无线电等其他电信通信方式纳入了规范管理，国际电报联盟改名为国际电信联盟（International Telecommunication Union，ITU），这就是大名鼎鼎的ITU的由来。</p>
+<p>1946年，<em>第一台通用计算机ENIAC（Electronic Numerical Integrator and Computer，电子数字积分计算机）诞生</em>。随着集成电路和微处理器的发明，在接下来不到20年的时间里，第二代，第三代计算机相继问世。于是使用电信通信的方式连接这些计算机的需求应运而生，数据通信时代的大幕随之拉开。</p>
+<h2 id="电路交换网络"><a href="#电路交换网络" class="headerlink" title="电路交换网络"></a>电路交换网络</h2><p>众所周知，早期的电子计算机是一台庞然大物。比如，前文提到的ENIAC重达27t，占地面积167m²。显然这样的计算机不可能配备给个人使用，也无法划分到家用设备的范畴中。实际情况是，早期的计算机由机构内部拥有计算需求的所有研究人员分时共享。<em><strong>为了更好地利用计算资源，研究人员开始使用电传打字机连接计算机地方式远程控制计算机，这就是最早地计算机远程通信方式</strong></em></p>
+<p>在当时，为了使电传打字机连接到计算机，人们需要在办公地点安装<strong>调制解调器</strong>，并把调制解调器连接到电话通信网络。在计算机端，计算机也需要通过调制解调器，并把调制解调器连接到电话通信网络。发送方地信息被调制解调器转换为模拟信号之后，通过电话通信网络传输给计算机端，再由调制解调器还原为数字信号。</p>
+<p>电话通信网络存在一种缺陷。在电话通信网络中，通信双方在通话开始之前，通过呼叫临时性地独占一条电信通道进行通话；通信结束之后断开这条电信通道，释放对应地物理媒介，这种通信方式称为电路交换。</p>
+<img src="/2023/01/04/H3C-Basics-of-Computer-Networks/%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2.png" class="" title="电路交换">
     </div>
 
     
@@ -361,21 +267,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag"><i class="fa fa-tag"></i> java基础</a>
+              <a href="/tags/H3CNE%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> H3CNE学习</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/08/15/World/" rel="prev" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
+                <a href="/2022/10/08/Comparison-of-IPv4-and-IPv6/" rel="prev" title="IPv4和IPv6">
+                  <i class="fa fa-chevron-left"></i> IPv4和IPv6
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/08/24/second-post/" rel="next" title="《图解HTTP》笔记">
-                  《图解HTTP》笔记 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
