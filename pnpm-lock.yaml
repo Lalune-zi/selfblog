@@ -38,6 +38,9 @@ dependencies:
   hexo-theme-next:
     specifier: ^8.12.3
     version: 8.12.3
+  hexo-theme-redefine:
+    specifier: ^2.3.0
+    version: 2.3.0
 
 packages:
 
@@ -740,6 +743,10 @@ packages:
 
   /hexo-theme-next@8.12.3:
     resolution: {integrity: sha512-KWH8jrrvU8/3cJRqbc/0nucEeM4LKuGydnPil/oOTEXmMq2EenyanpC1mxuhQCSoJHvzJChayzIjtmiNdPJndA==}
+    dev: false
+
+  /hexo-theme-redefine@2.3.0:
+    resolution: {integrity: sha512-fjEn9bbp1VK2ArYM4w8SYSQKpc+io/5Go6upz3421cFSYsje2WtHpSzmyF4GrOFLzKiCGTHeOEccaC9Ir82ylQ==}
     dev: false
 
   /hexo-util@2.7.0:
